@@ -1,7 +1,0 @@
-<!-- PLACEHOLDER: replace with your own photo (square, at least 400x400) -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
-  <rect width="400" height="400" fill="#dfe6f7"/>
-  <circle cx="200" cy="160" r="72" fill="#9fb2e3"/>
-  <path d="M60 400c0-80 63-130 140-130s140 50 140 130z" fill="#9fb2e3"/>
-  <text x="200" y="385" font-family="system-ui, sans-serif" font-size="22" fill="#2f5bd3" text-anchor="middle">Your photo</text>
-</svg>

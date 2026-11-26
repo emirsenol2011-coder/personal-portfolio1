@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <rect width="1200" height="630" fill="#f7f7f5"/>
-  <rect x="80" y="80" width="12" height="470" fill="#2f5bd3"/>
-  <text x="140" y="300" font-family="Helvetica, Arial, sans-serif" font-size="110" font-weight="700" fill="#1a1a1a">Emir Senol</text>
-  <text x="144" y="380" font-family="Helvetica, Arial, sans-serif" font-size="40" fill="#55595f">Finance &amp; AI · INSEAD Master in Management</text>
+  <rect width="1200" height="630" fill="#efece7"/>
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#dcd7ce" stroke-width="2"/>
+  <path d="M34 40h12M40 34v12M1154 40h12M1160 34v12" stroke="#d4540a" stroke-width="2"/>
+  <text x="100" y="150" font-family="Menlo, monospace" font-size="24" fill="#6b6760" letter-spacing="1">EMIR SENOL · INSEAD MASTER IN MANAGEMENT</text>
+  <text x="96" y="330" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="118" font-weight="600" letter-spacing="-5" fill="#35332f">Where <tspan font-family="Palatino, Georgia, serif" font-style="italic" font-weight="400" fill="#d4540a" letter-spacing="-2">finance</tspan></text>
+  <text x="96" y="460" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="118" font-weight="600" letter-spacing="-5" fill="#35332f">meets AI.</text>
+  <text x="100" y="545" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="#6b6760">emirsenol.netlify.app</text>
 </svg>
