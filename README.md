@@ -118,15 +118,17 @@ Netlify hosts the site for free and **re-publishes it automatically every time y
 6. Click **Deploy**.
 
 After a few seconds you'll get an address like `https://something-random.netlify.app`.
-You can change it under **Project configuration → Change project name**.
+You can change it in Netlify under **Manage → Name and address → Rename**.
+This site lives at **https://emirsenol.netlify.app**.
 
 From now on: **edit → commit → push**, and Netlify updates the live site by itself within a minute.
 
-### After your first deploy: fix the sharing preview
+### If you change the address: fix the sharing preview
 
-Open `index.html` and, near the top, replace every `https://YOUR-SITE.netlify.app`
-with your real Netlify address. This makes the preview image appear when you share
-your link on LinkedIn, WhatsApp, X, etc. Then commit and push.
+Renaming the project (or adding your own domain) changes the site's address, and the
+old address stops working. Open `index.html` and, near the top, replace every
+`https://emirsenol.netlify.app` with the new address. This keeps the preview image
+working when you share your link on LinkedIn, WhatsApp, X, etc. Then commit and push.
 
 ---
 
