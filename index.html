@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       SEO + SOCIAL SHARING
+       EDIT ME: update the title, description, and URL below.
+       After you deploy to Netlify, replace https://YOUR-SITE.netlify.app
+       with your real address (social sites need a full URL for images).
+       ============================================================ -->
+  <title>Emir Senol — Personal Website</title>
+  <meta name="description" content="Emir Senol's personal website: about, projects, experience, and how to get in touch.">
+  <meta name="author" content="Emir Senol">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Emir Senol">
+  <meta property="og:description" content="Emir Senol's personal website: about, projects, experience, and how to get in touch.">
+  <meta property="og:url" content="https://YOUR-SITE.netlify.app/">
+  <meta property="og:image" content="https://YOUR-SITE.netlify.app/images/og-image.png">
+  <meta property="og:image:alt" content="Emir Senol — personal website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Emir Senol">
+  <meta name="twitter:description" content="Emir Senol's personal website: about, projects, experience, and how to get in touch.">
+  <meta name="twitter:image" content="https://YOUR-SITE.netlify.app/images/og-image.png">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="nav__logo" href="#top" aria-label="Emir Senol, back to top">ES</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="visually-hidden">Menu</span>
+        <span class="nav__bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero container" id="top">
+      <!-- EDIT ME: replace images/profile.svg with your photo (e.g. images/profile.jpg) -->
+      <img class="hero__photo" src="images/profile.svg" alt="Portrait of Emir Senol" width="160" height="160">
+      <div>
+        <p class="eyebrow">Hi, I'm</p>
+        <h1 class="hero__name">Emir Senol</h1>
+        <!-- EDIT ME: your one-line tagline -->
+        <p class="hero__tagline">[Your tagline] — e.g. “Builder, learner, and curious about how things work.”</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">See my work</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section container reveal" id="about" aria-labelledby="about-title">
+      <h2 class="section__title" id="about-title">About</h2>
+      <div class="about">
+        <!-- EDIT ME: your 2–3 sentence bio -->
+        <p>
+          [Your bio, sentence one: who you are and what you're focused on right now.]
+          [Sentence two: what you enjoy building or studying, and why.]
+          [Sentence three: what you're looking for — opportunities, collaborators, or just saying hello.]
+        </p>
+        <h3 class="about__subtitle">What I do</h3>
+        <!-- EDIT ME: add, remove, or rename skills -->
+        <ul class="tags" aria-label="Skills">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Git &amp; GitHub</li>
+          <li>[Skill]</li>
+          <li>[Skill]</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section container reveal" id="projects" aria-labelledby="projects-title">
+      <h2 class="section__title" id="projects-title">Projects</h2>
+      <!-- EDIT ME: one <li class="card"> per project. Copy/paste a block to add more. -->
+      <ul class="cards">
+        <li class="card">
+          <!-- EDIT ME: swap in a screenshot, e.g. images/project-1.png -->
+          <img class="card__img" src="images/project-placeholder.svg" alt="Screenshot of Personal Website" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <h3 class="card__title">Personal Website</h3>
+            <p>This site — hand-written HTML, CSS and JavaScript, deployed on Netlify.</p>
+            <a class="card__link" href="https://github.com/YOUR-USERNAME/YOUR-REPO">View on GitHub <span aria-hidden="true">→</span></a>
+          </div>
+        </li>
+        <li class="card">
+          <img class="card__img" src="images/project-placeholder.svg" alt="Screenshot of Project Two" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <h3 class="card__title">[Project Two]</h3>
+            <p>[One-line description of what it does and what you used to build it.]</p>
+            <a class="card__link" href="#">View project <span aria-hidden="true">→</span></a>
+          </div>
+        </li>
+        <li class="card">
+          <img class="card__img" src="images/project-placeholder.svg" alt="Screenshot of Project Three" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <h3 class="card__title">[Project Three]</h3>
+            <p>[One-line description of what it does and what you used to build it.]</p>
+            <a class="card__link" href="#">View project <span aria-hidden="true">→</span></a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section container reveal" id="experience" aria-labelledby="experience-title">
+      <h2 class="section__title" id="experience-title">Experience &amp; Education</h2>
+      <!-- EDIT ME: one <li> per item, newest first -->
+      <ol class="timeline">
+        <li class="timeline__item">
+          <p class="timeline__date">[2025 — Present]</p>
+          <h3 class="timeline__title">[Role or Program] · <span class="timeline__org">[Organization]</span></h3>
+          <p>[One or two lines on what you did or learned.]</p>
+        </li>
+        <li class="timeline__item">
+          <p class="timeline__date">[2023 — 2025]</p>
+          <h3 class="timeline__title">[Role or Program] · <span class="timeline__org">[Organization]</span></h3>
+          <p>[One or two lines on what you did or learned.]</p>
+        </li>
+        <li class="timeline__item">
+          <p class="timeline__date">[Year]</p>
+          <h3 class="timeline__title">[Award, certificate, or milestone]</h3>
+          <p>[Short note about it.]</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section container reveal" id="contact" aria-labelledby="contact-title">
+      <h2 class="section__title" id="contact-title">Contact</h2>
+      <p class="contact__lead">Want to work together or just say hi? My inbox is open.</p>
+      <!-- EDIT ME: put in your real email and profile links -->
+      <a class="btn btn--primary" href="mailto:you@example.com">you@example.com</a>
+      <ul class="socials">
+        <li><a href="https://github.com/YOUR-USERNAME">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year">2026</span> Emir Senol</p>
+    <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

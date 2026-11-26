@@ -1,0 +1,8 @@
+<!-- PLACEHOLDER: replace with a project screenshot (16:9, e.g. 1280x720) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#e8ecf5"/>
+  <rect x="80" y="60" width="480" height="240" rx="12" fill="#ffffff" stroke="#c6d0ea" stroke-width="2"/>
+  <rect x="80" y="60" width="480" height="32" rx="12" fill="#dfe6f7"/>
+  <circle cx="102" cy="76" r="5" fill="#9fb2e3"/><circle cx="120" cy="76" r="5" fill="#9fb2e3"/><circle cx="138" cy="76" r="5" fill="#9fb2e3"/>
+  <text x="320" y="205" font-family="system-ui, sans-serif" font-size="22" fill="#2f5bd3" text-anchor="middle">Project screenshot</text>
+</svg>
