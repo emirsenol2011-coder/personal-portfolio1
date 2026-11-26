@@ -13,8 +13,8 @@
   <title>Emir Senol — Finance &amp; AI</title>
   <meta name="description" content="Emir Senol is an INSEAD Master in Management student working where finance meets AI, with experience at PwC, the Credit Bureau of Turkey and Union Bancaire Privée.">
   <meta name="author" content="Emir Senol">
-  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#efece7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#191816" media="(prefers-color-scheme: dark)">
   <meta name="color-scheme" content="light dark">
   <link rel="canonical" href="https://emirsenol.netlify.app/">
 
@@ -37,152 +37,189 @@
 
   <header class="site-header">
     <nav class="nav container" aria-label="Main">
-      <a class="nav__logo" href="#top" aria-label="Emir Senol, back to top">ES</a>
+      <a class="nav__brand" href="#top">Emir Senol</a>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
         <span class="visually-hidden">Menu</span>
         <span class="nav__bar" aria-hidden="true"></span>
       </button>
       <ul class="nav__menu" id="nav-menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="nav__contact"><a href="#contact">Contact</a></li>
       </ul>
+      <a class="btn btn--dark btn--small nav__cta" href="#contact">Get in touch</a>
     </nav>
   </header>
 
   <main id="main">
 
     <!-- ===================== HERO ===================== -->
-    <section class="hero container" id="top">
-      <!-- EDIT ME: replace images/profile.svg with your photo (e.g. images/profile.jpg) -->
-      <img class="hero__photo" src="images/profile.svg" alt="Portrait of Emir Senol" width="160" height="160">
-      <div>
-        <p class="eyebrow">Hi, I'm</p>
-        <h1 class="hero__name">Emir Senol</h1>
-        <!-- EDIT ME: your one-line tagline -->
-        <p class="hero__tagline">I work where finance meets AI. Master in Management student at INSEAD, previously at PwC, the Credit Bureau of Turkey and Union Bancaire Privée.</p>
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <!-- EDIT ME: your photo lives at images/profile.jpg (square works best) -->
+        <img class="hero__photo" src="images/profile.jpg" alt="Portrait of Emir Senol" width="128" height="128">
+        <p class="eyebrow">Emir Senol · INSEAD Master in Management</p>
+        <!-- EDIT ME: your headline. Wrap one word in <em> to give it the orange serif accent. -->
+        <h1 class="hero__title"><span class="visually-hidden">Emir Senol: </span>Where <em>finance</em><br> meets AI.</h1>
+        <p class="hero__lead">Master in Management student at INSEAD. Previously capital markets at PwC, generative AI at the Credit Bureau of Turkey, and investment analysis at Union Bancaire Privée.</p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#experience">See my experience</a>
-          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn btn--dark" href="#experience">See my experience</a>
+          <a class="btn btn--light" href="#contact">Get in touch</a>
         </div>
+      </div>
+
+      <div class="strip container">
+        <p class="strip__label">Experience &amp; education</p>
+        <ul class="strip__list">
+          <li>INSEAD</li>
+          <li>PwC</li>
+          <li>Kredi Kayıt Bürosu</li>
+          <li>Union Bancaire Privée</li>
+          <li>Bocconi University</li>
+        </ul>
       </div>
     </section>
 
     <!-- ===================== ABOUT ===================== -->
     <section class="section container reveal" id="about" aria-labelledby="about-title">
-      <h2 class="section__title" id="about-title">About</h2>
-      <div class="about">
-        <!-- EDIT ME: your 2–3 sentence bio -->
-        <p>
-          I'm a Master in Management student at INSEAD in Singapore, after a BSc in
-          International Economics, Management and Computer Science at Bocconi University in Milan.
-          My work so far has sat between finance and technology: IPOs and bond offerings at PwC,
-          Turkish-language LLM tools and synthetic credit data at the Credit Bureau of Turkey,
-          and investment analysis at Union Bancaire Privée in Geneva.
-          I'm drawn to problems that need both a solid financial model and the data skills to back it up.
-        </p>
-        <h3 class="about__subtitle">What I do</h3>
-        <!-- EDIT ME: add, remove, or rename skills -->
-        <ul class="tags" aria-label="Skills">
-          <li>Financial modelling &amp; valuation</li>
-          <li>Capital markets (IPOs &amp; bonds)</li>
-          <li>Accounting &amp; financial statement analysis</li>
-          <li>Python (pandas, PyTorch, scikit-learn)</li>
-          <li>Machine learning &amp; LLMs</li>
-          <li>SQL &amp; R</li>
+      <div class="frame">
+        <div class="frame__head">
+          <p class="section__label">About</p>
+          <h2 class="section__title" id="about-title">Financial rigour, <em>engineering</em> habits.</h2>
+          <!-- EDIT ME: your 2–3 sentence bio -->
+          <p class="about__text">
+            I'm a Master in Management student at INSEAD in Singapore, after a BSc in
+            International Economics, Management and Computer Science at Bocconi University in Milan.
+            My work so far has sat between finance and technology: IPOs and bond offerings at PwC,
+            Turkish-language LLM tools and synthetic credit data at the Credit Bureau of Turkey,
+            and investment analysis at Union Bancaire Privée in Geneva.
+          </p>
+        </div>
+
+        <!-- EDIT ME: four things you do. Keep each short. -->
+        <ul class="cells" aria-label="What I do">
+          <li class="cell">
+            <span class="cell__num">01</span>
+            <h3 class="cell__title">Valuation &amp; modelling</h3>
+            <p>Comparables, valuation cross-checks and independent re-modelling of reported financials.</p>
+          </li>
+          <li class="cell">
+            <span class="cell__num">02</span>
+            <h3 class="cell__title">Capital markets</h3>
+            <p>IPO prospectus work and bond offerings, from accounting positions to disclosures.</p>
+          </li>
+          <li class="cell">
+            <span class="cell__num">03</span>
+            <h3 class="cell__title">Machine learning</h3>
+            <p>Python, PyTorch and scikit-learn; NLP and Monte Carlo simulation for portfolio risk.</p>
+          </li>
+          <li class="cell">
+            <span class="cell__num">04</span>
+            <h3 class="cell__title">LLMs &amp; synthetic data</h3>
+            <p>Turkish-language LLM tools and privacy-preserving synthetic financial datasets.</p>
+          </li>
         </ul>
-        <h3 class="about__subtitle">Languages</h3>
-        <ul class="tags" aria-label="Languages">
-          <li>Turkish (native)</li>
-          <li>English (native)</li>
-          <li>Italian (intermediate)</li>
-        </ul>
+
+        <dl class="facts">
+          <div><dt>Languages</dt><dd>Turkish (native) · English (native) · Italian (intermediate)</dd></div>
+          <div><dt>Tools</dt><dd>Python · R · SQL · LaTeX · Microsoft Office</dd></div>
+        </dl>
       </div>
     </section>
 
-    <!-- ===================== PROJECTS ===================== -->
-    <section class="section container reveal" id="projects" aria-labelledby="projects-title">
-      <h2 class="section__title" id="projects-title">Projects &amp; Research</h2>
-      <!-- EDIT ME: one <li class="card"> per project. Copy/paste a block to add more.
-           A project without a public link can simply leave out the <a class="card__link"> line. -->
-      <ul class="cards">
-        <li class="card">
-          <!-- EDIT ME: swap in an image, e.g. images/project-thesis.png -->
-          <img class="card__img" src="images/project-placeholder.svg" alt="" width="640" height="360" loading="lazy">
-          <div class="card__body">
-            <h3 class="card__title">Innovation Strategies: EU, USA &amp; China</h3>
-            <p>Bocconi undergraduate thesis comparing national innovation systems (policy, funding and public–private collaboration) to draw recommendations for the UAE.</p>
-          </div>
+    <!-- ===================== WORK (projects & research) ===================== -->
+    <section class="section container reveal" id="work" aria-labelledby="work-title">
+      <p class="section__label">Work</p>
+      <h2 class="section__title" id="work-title">Selected <em>research</em> &amp; projects.</h2>
+      <!-- EDIT ME: one <li class="work__item"> per project. Copy/paste a block to add more.
+           To show an image on a card, add this line just inside the <li>:
+           <img class="work__img" src="images/your-image.jpg" alt="Describe the image" width="640" height="360" loading="lazy">
+           A project without a public link can leave out the <a class="work__link"> line. -->
+      <ul class="work">
+        <li class="work__item">
+          <p class="work__kicker">Thesis · Bocconi · 2024</p>
+          <h3 class="work__title">Innovation strategies: EU, USA &amp; China</h3>
+          <p>Compared national innovation systems (policy, funding and public–private collaboration) to draw recommendations for the UAE.</p>
         </li>
-        <li class="card">
-          <img class="card__img" src="images/project-placeholder.svg" alt="" width="640" height="360" loading="lazy">
-          <div class="card__body">
-            <h3 class="card__title">The Evergrande Crisis</h3>
-            <p>Published analysis for the Bocconi Economics Students Association on China's real-estate risks and their global financial implications.</p>
-          </div>
+        <li class="work__item">
+          <p class="work__kicker">Research · Bocconi Economics Students Association</p>
+          <h3 class="work__title">The Evergrande crisis</h3>
+          <p>Published analysis of China's real-estate risks and their global financial implications.</p>
         </li>
-        <li class="card">
-          <img class="card__img" src="images/project-placeholder.svg" alt="" width="640" height="360" loading="lazy">
-          <div class="card__body">
-            <h3 class="card__title">This website</h3>
-            <p>Hand-written HTML, CSS and JavaScript with no build step, deployed on Netlify from GitHub.</p>
-            <a class="card__link" href="https://github.com/emirsenol2011-coder/personal-portfolio1">View on GitHub <span aria-hidden="true">→</span></a>
-          </div>
+        <li class="work__item">
+          <p class="work__kicker">Side project · 2026</p>
+          <h3 class="work__title">This website</h3>
+          <p>Hand-written HTML, CSS and JavaScript with no build step, deployed on Netlify from GitHub.</p>
+          <a class="work__link" href="https://github.com/emirsenol2011-coder/personal-portfolio1">View on GitHub <span aria-hidden="true">→</span></a>
         </li>
       </ul>
     </section>
 
     <!-- ===================== EXPERIENCE ===================== -->
     <section class="section container reveal" id="experience" aria-labelledby="experience-title">
-      <h2 class="section__title" id="experience-title">Experience &amp; Education</h2>
+      <p class="section__label">Experience</p>
+      <h2 class="section__title" id="experience-title">Experience &amp; <em>education</em>.</h2>
       <!-- EDIT ME: one <li> per item, newest first -->
-      <ol class="timeline">
-        <li class="timeline__item">
-          <p class="timeline__date">2026 — 2028</p>
-          <h3 class="timeline__title">Master in Management · <span class="timeline__org">INSEAD, Singapore</span></h3>
-          <p>Ranked #3 worldwide in the Financial Times Master in Management ranking (2025). Coursework in corporate finance, valuation and financial statement analysis.</p>
+      <ol class="rows">
+        <li class="row">
+          <p class="row__date">2026 — 2028</p>
+          <div>
+            <h3 class="row__title">Master in Management <span class="row__org">INSEAD, Singapore</span></h3>
+            <p>Ranked #3 worldwide in the Financial Times Master in Management ranking (2025). Coursework in corporate finance, valuation and financial statement analysis.</p>
+          </div>
         </li>
-        <li class="timeline__item">
-          <p class="timeline__date">2025 — 2026</p>
-          <h3 class="timeline__title">Associate, Capital Markets &amp; Accounting Advisory · <span class="timeline__org">PwC, Istanbul</span></h3>
-          <p>Worked on IPOs and bond offerings across banking, real estate, agribusiness, industrials and telecom: drafting prospectus sections, checking valuations against comparables, and independently modelling reported financials.</p>
+        <li class="row">
+          <p class="row__date">2025 — 2026</p>
+          <div>
+            <h3 class="row__title">Associate, Capital Markets &amp; Accounting Advisory <span class="row__org">PwC, Istanbul</span></h3>
+            <p>Worked on IPOs and bond offerings across banking, real estate, agribusiness, industrials and telecom: drafting prospectus sections, checking valuations against comparables, and independently modelling reported financials.</p>
+          </div>
         </li>
-        <li class="timeline__item">
-          <p class="timeline__date">2024 — 2025</p>
-          <h3 class="timeline__title">Generative AI Engineer · <span class="timeline__org">Kredi Kayıt Bürosu (Credit Bureau of Turkey), Istanbul</span></h3>
-          <p>Built Turkish-language LLM and retrieval-based document tools that cut internal IT and support requests by over 50%, and evaluated synthetic-data techniques with Prometeia and IBM for a new product line serving partner banks.</p>
+        <li class="row">
+          <p class="row__date">2024 — 2025</p>
+          <div>
+            <h3 class="row__title">Generative AI Engineer <span class="row__org">Kredi Kayıt Bürosu (Credit Bureau of Turkey), Istanbul</span></h3>
+            <p>Built Turkish-language LLM and retrieval-based document tools that cut internal IT and support requests by over 50%, and evaluated synthetic-data techniques with Prometeia and IBM for a new product line serving partner banks.</p>
+          </div>
         </li>
-        <li class="timeline__item">
-          <p class="timeline__date">2022</p>
-          <h3 class="timeline__title">Investment Analyst Intern · <span class="timeline__org">Union Bancaire Privée, Geneva</span></h3>
-          <p>Co-prepared investment pitches later approved by the Investment Committee, built financial models within a $10B AUM portfolio, and applied NLP and Monte Carlo simulation to portfolio risk.</p>
+        <li class="row">
+          <p class="row__date">2022</p>
+          <div>
+            <h3 class="row__title">Investment Analyst Intern <span class="row__org">Union Bancaire Privée, Geneva</span></h3>
+            <p>Co-prepared investment pitches later approved by the Investment Committee, built financial models within a $10B AUM portfolio, and applied NLP and Monte Carlo simulation to portfolio risk.</p>
+          </div>
         </li>
-        <li class="timeline__item">
-          <p class="timeline__date">2020 — 2024</p>
-          <h3 class="timeline__title">BSc International Economics, Management &amp; Computer Science · <span class="timeline__org">Bocconi University, Milan</span></h3>
-          <p>Head of Human Resources at the Bocconi Data Science Association (12 events, 500+ attendees) and Research Analyst at the Bocconi Economics Students Association.</p>
+        <li class="row">
+          <p class="row__date">2020 — 2024</p>
+          <div>
+            <h3 class="row__title">BSc International Economics, Management &amp; Computer Science <span class="row__org">Bocconi University, Milan</span></h3>
+            <p>Head of Human Resources at the Bocconi Data Science Association (12 events, 500+ attendees) and Research Analyst at the Bocconi Economics Students Association.</p>
+          </div>
         </li>
-        <li class="timeline__item">
-          <p class="timeline__date">Certifications</p>
-          <h3 class="timeline__title">Machine Learning Specialization · <span class="timeline__org">DeepLearning.AI &amp; Stanford University</span></h3>
-          <p>Also: Private Equity &amp; Venture Capital (Università Bocconi).</p>
+        <li class="row">
+          <p class="row__date">Certifications</p>
+          <div>
+            <h3 class="row__title">Machine Learning Specialization <span class="row__org">DeepLearning.AI &amp; Stanford University</span></h3>
+            <p>Also: Private Equity &amp; Venture Capital (Università Bocconi).</p>
+          </div>
         </li>
       </ol>
     </section>
 
     <!-- ===================== CONTACT ===================== -->
-    <section class="section container reveal" id="contact" aria-labelledby="contact-title">
-      <h2 class="section__title" id="contact-title">Contact</h2>
+    <section class="section section--contact container reveal" id="contact" aria-labelledby="contact-title">
+      <p class="section__label">Contact</p>
+      <h2 class="contact__title" id="contact-title">Let's <em>talk</em>.</h2>
       <p class="contact__lead">Happy to talk about finance, AI and new opportunities. Email is the quickest way to reach me.</p>
       <!-- EDIT ME: your email and profile links -->
-      <a class="btn btn--primary" href="mailto:emirsenol0402@gmail.com">emirsenol0402@gmail.com</a>
-      <ul class="socials">
-        <li><a href="https://github.com/emirsenol2011-coder">GitHub</a></li>
+      <div class="contact__actions">
+        <a class="btn btn--dark" href="mailto:emirsenol0402@gmail.com">emirsenol0402@gmail.com</a>
+        <a class="btn btn--light" href="https://github.com/emirsenol2011-coder">GitHub</a>
         <!-- EDIT ME: add your LinkedIn address and remove the comment marks around this line
-        <li><a href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a></li>
+        <a class="btn btn--light" href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a>
         -->
-      </ul>
+      </div>
     </section>
 
   </main>

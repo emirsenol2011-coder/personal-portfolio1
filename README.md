@@ -10,8 +10,7 @@ There is **nothing to install** — no Node, no npm, no build step.
 ├── script.js       ← small extras (mobile menu, scroll animations)
 ├── README.md       ← this file
 └── images/
-    ├── profile.svg              ← placeholder for your photo
-    ├── project-placeholder.svg  ← placeholder for project screenshots
+    ├── profile.jpg              ← your photo (square)
     ├── og-image.png             ← preview image shown when your link is shared
     ├── og-image.svg             ← editable source for og-image.png
     └── favicon.svg              ← the little icon in the browser tab
@@ -135,19 +134,18 @@ working when you share your link on LinkedIn, WhatsApp, X, etc. Then commit and 
 ## 4. Where to change things
 
 Every spot you should edit is marked with an **`EDIT ME`** comment in `index.html`.
-Search the file for `EDIT ME` (⌘F / Ctrl+F in your editor), and look for text in
-`[square brackets]` — those are placeholders.
+Search the file for `EDIT ME` (⌘F / Ctrl+F in your editor).
 
 | What | Where |
 | --- | --- |
 | Page title, description, share preview | Top of `index.html`, inside `<head>` |
-| Name & tagline | `index.html` → **HERO** section |
-| Bio and skills | `index.html` → **ABOUT** section (one `<li>` per skill) |
-| Projects | `index.html` → **PROJECTS** section (copy a whole `<li class="card"> … </li>` block to add one) |
-| Experience / education | `index.html` → **EXPERIENCE** section (one `<li>` per item, newest first) |
+| Headline & intro | `index.html` → **HERO** section. Wrap one word in `<em>…</em>` to make it the orange serif accent |
+| Bio, the four "What I do" boxes, languages | `index.html` → **ABOUT** section (one `<li class="cell">` per box) |
+| Projects & research | `index.html` → **WORK** section (copy a whole `<li class="work__item"> … </li>` block to add one) |
+| Experience / education | `index.html` → **EXPERIENCE** section (one `<li class="row">` per item, newest first) |
 | Email & social links | `index.html` → **CONTACT** section |
-| Colors | `styles.css` → the `:root` block at the top (light mode) and the block right below it (dark mode) |
-| Fonts | `styles.css` → `--font` in the `:root` block |
+| Colors | `styles.css` → the `:root` block at the top (light mode) and the block right below it (dark mode). `--accent` is the orange |
+| Fonts | `styles.css` → `--font` (main text) and `--serif` (the accent words) in the `:root` block |
 
 ### Swapping in your own images
 
@@ -157,8 +155,8 @@ Search the file for `EDIT ME` (⌘F / Ctrl+F in your editor), and look for text 
 
 | Image | Suggested size | Replace in `index.html` |
 | --- | --- | --- |
-| Your photo | square, 400×400 or larger (e.g. `profile.jpg`) | `src="images/profile.svg"` in the HERO section |
-| Project screenshots | 16:9, e.g. 1280×720 (`project-1.png`, …) | each `src="images/project-placeholder.svg"` in PROJECTS |
+| Your photo | square, 400×400 or larger | overwrite `images/profile.jpg` (keep the same name) |
+| Project images (optional) | 16:9, e.g. 1280×720 (`project-1.jpg`, …) | add the `<img class="work__img" …>` line shown in the comment above the WORK list |
 | Sharing preview | exactly 1200×630, PNG or JPG | overwrite `images/og-image.png` (keep the same name) |
 | Browser tab icon | square SVG or PNG | overwrite `images/favicon.svg` |
 
